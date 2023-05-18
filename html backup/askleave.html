@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Talent Science Lab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+    	<link rel="shortcut icon" href="icon.ico" type="image/x-icon"/>
+		
+	
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="askleave-assets/css/aboutus.css" />
+	
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="main.html">Talent Science Lab <span>by Group TALENT</span></a></div>
+				<a href="main.html"><span id="L1"></span></a>
+				<a href="course.html"><span id="L2"></span></a>
+				<a href="regis.html"><span id="L3"></span></a>
+				<a href="cart.html"><span id="L4"></span></a>
+				<a href="mov.html"><span id="L5"></span></a>
+				<a href="teacher.html"><span id="L6"></span></a>
+				<a href="couinformations.html"><span id="L7"></span></a>
+				<a href="aboutus.html"><span id="L8"></span></a>
+				<a href="contactus.html"><span id="L9"></span></a>
+				<a href="photo.html"><span id="L92"></span></a>
+				<!--多國語言按鈕-->
+				<button onclick="chg_lan(0);chi();">中文</button> &nbsp; 
+				<button onclick="chg_lan(1);eng();">English</button> &nbsp; 
+				<button onclick="chg_lan(2);jp()">日本語</button> &nbsp; 
+				<!----------->
+			</header>
+
+		<!-- Nav -->
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Talent Science Lab</p>
+						<h2>天賦科學實驗室</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>Ask For A Leave</p>
+								<h2>線上請假</h2>
+							</header>
+              <div>
+                <iframe name="hidden_iframe" style="display:none;" ></iframe>
+                <form action="https://script.google.com/macros/s/AKfycbx1CSRjioa1vF-d9XgMbhv-Vup-YWW0XXoMY9Z1BF0YDtu0Nk1BejEmQEdUX94zUZJk/exec" method="post" target="hidden_iframe" onsubmit="clean()">
+                <input type="hidden" name="method" value="15" />
+				<div class="js-append">
+
+				</div>
+				<span id="L68"></span>：<input type="text" name="stuno" placeholder="學生編號/ID/学生編號" title="學生姓名" required="required" id="stuno" value="" readonly/><br/>
+                <span id="L56"></span>：<input type="text" name="stuname" placeholder="學生姓名/name/学生名" title="學生姓名" required="required" id="stuname" value="" readonly/><br/>
+
+                <span id="L67"></span>：<select name="leave" style="padding: 0 1rem;" class="js-append-list">
+					<option value="公假">公假</option>
+					<option value="事假">事假</option>
+					<option value="病假">病假</option>
+					<option value="喪假">喪假</option>
+                </select>
+                <br/>
+                <span id="L62"></span>：<input type="text" name="phoneno" placeholder="電話號碼/PhoneNo." title="填入註解" required="required"/><br/>
+				<span id="L69"></span>：<input type="text" name="time" placeholder="請假時間" title="填入註解" required="required" id="time"/><br/>
+                <input type="submit" value="submit" />
+                </form>   
+              </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/talentsciencelabofficial/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/talent_science_lab_official/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:talent_science_lab_official@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; talentsciencelabofficial. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../js/languageData.js" type="text/javascript"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    		<script src="assets/js/jquery.params.js"></script>
+
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+			<script>
+				function chi(){
+					$(function() {
+						$('.js-append-list').empty()
+					{
+								var list=
+								`   
+									<option value="公假">公假</option>
+									<option value="事假">事假</option>
+									<option value="病假">病假</option>
+									<option value="喪假">喪假</option>
+								`;
+									$('.js-append-list').append(list);
+								}
+					});
+				}
+				function eng() {
+					$(function () {
+						$('.js-append-list').empty()
+					{
+								var list=
+								`   
+									<option value="公假">Official leave</option>
+									<option value="事假">Day off</option>
+									<option value="病假">Sick leave</option>
+									<option value="喪假">funeral leave</option>
+								`;
+									$('.js-append-list').append(list);
+								}
+					});
+				}
+				function jp() {
+					$(function () {
+						$('.js-append-list').empty()
+					{
+								var list=
+								`   
+									<option value="公假">有給休暇</option>
+									<option value="事假">個人休暇</option>
+									<option value="病假">病気休暇</option>
+									<option value="喪假">忌引（きびき）休暇</option>
+								`;
+									$('.js-append-list').append(list);
+								}
+					});
+				}
+		</script>
+<script>
+function clean(){
+	alert("請假成功")
+	
+	window.location.href="askleave.html";
+}
+</script>
+<script>
+$(function(){
+	var sideslider = $('[data-toggle=collapse-side]');
+	var get_sidebar = sideslider.attr('data-target-sidebar');
+	var get_content = sideslider.attr('data-target-content');
+	sideslider.click(function(event){
+	$(get_sidebar).toggleClass('in');
+	$(get_content).toggleClass('out');
+	});
+	});
+</script>
+	</body>
+</html>
+<!------------------------------------------------------------------>
+<!--多國語言程式-->
+
+<script>
+	function chg_lan(lan_index) 
+	{ 
+		var myLangArray; 
+
+		switch(lan_index) 
+		{ 
+		/* languageData.js */
+			case 1: 
+		/* English */
+			myLangArray = L_english; 
+			break; 
+		case 2: 
+		/* Japan */
+			myLangArray = L_japan; 
+			break; 
+		default :
+		/* Taiwan */
+			myLangArray = L_taiwan; 
+		break; 
+
+		}
+		/* 將各個文字, 填入指定位置 */
+
+		//navbar
+		document.getElementById('L1').innerHTML = myLangArray[1];
+		document.getElementById('L2').innerHTML = myLangArray[2];
+		document.getElementById('L3').innerHTML = myLangArray[3];
+		document.getElementById('L4').innerHTML = myLangArray[4];
+		document.getElementById('L5').innerHTML = myLangArray[5];
+		document.getElementById('L6').innerHTML = myLangArray[6];
+		document.getElementById('L7').innerHTML = myLangArray[7];
+		document.getElementById('L8').innerHTML = myLangArray[8];
+		document.getElementById('L9').innerHTML = myLangArray[9];
+
+    //join class
+		document.getElementById('L56').innerHTML = myLangArray[56];
+    	document.getElementById('L62').innerHTML = myLangArray[62];
+    	document.getElementById('L67').innerHTML = myLangArray[67];
+		document.getElementById('L68').innerHTML = myLangArray[68];
+		document.getElementById('L69').innerHTML = myLangArray[69];
+
+		document.getElementById('L92').innerHTML = myLangArray[92]
+	}
+</script>
+<script type="text/javascript">chg_lan(0); </script>
+<!------------------------------------------------------------------>
+
+<!-- <script>
+	$(function(){
+		parseCookie();
+		getData2();
+	});
+	
+function parseCookie() {
+    var cookieObj = {};
+    var cookieAry = document.cookie.split(';');
+    var cookie;
+    
+    for (var i=0, l=cookieAry.length; i<l; ++i) {
+        cookie = jQuery.trim(cookieAry[i]);
+        cookie = cookie.split('=');
+        cookieObj[cookie[0]] = cookie[1];
+    }
+    
+    return cookieObj;
+}
+
+
+function getCookieByName(name) {
+    var value = parseCookie()[name];
+    if (value) {
+        value = decodeURIComponent(value);
+    }
+    return value;
+}
+
+
+	function getData2(){
+		var no = getCookieByName("no");
+		var name = getCookieByName("name")
+		if (no!=""&&name!="")
+		{
+			alert("尚未登入")
+			window.location.href="stulogin.html";
+		}
+		$("#stuno").val(no);
+	}
+</script> -->
+	
+<script> //傳值
+$(function(){
+		show()
+	});
+function show () {
+    
+    //URL
+    var url = location.href;
+    
+    //取得問號之後的值
+    var temp = url.split("?");
+
+	if(temp[1]==null){
+		alert("尚未登入")
+		window.location.href="stulogin.html";
+	}
+
+    //將值再度分開
+    var vars = temp[1].split("&");
+
+
+	var no = vars[0];
+	var name = decodeURI(vars[1]);//將亂碼轉回中文
+	$("#stuno").val(no);//設定id為stuno的欄位值=no
+	$("#stuname").val(name);
+	$("#time").val((new Date().getMonth()+1)+"/"+new Date().getDate()); //預設為當天
+	// $("#time").val(Date.now); //可以做主索引唯一值
+	if (no==""&&name==""){
+		alert("尚未登入")
+		window.location.href="stulogin.html";
+	}
+		
+		
+
+   }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>登入頁面</title>
+<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="login-assets/css/adminlogin.css"/>
+<script type="text/javascript" src="login-assets/js/login.js"></script>
+</head>
+
+<body>
+<div id="login_frame">
+<p id="image_logo"><a href="main.html"><img src="login-assets/img/logo.png"></a></p>
+<form method="post" action="login.js">
+<p><label class="label_input">使用者名稱</label><input type="text" id="username" class="text_field"/></p>
+<p><label class="label_input">密碼</label><input type="password" id="password" class="text_field"/></p>
+<div id="login_control">
+<input type="button" id="btn_login" value="登入" onclick="login();"/><input type="button" id="btn_login" value="加入會員" onclick="insert()"/><input type="button" id="btn_login" value="回首頁" onclick="mainpage()"/>
+<!--<a id="forget_pwd" href="forget_pwd.html">忘記密碼？</a>-->
+</div>
+</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</body>
+</html>
+
+<script>
+    function insert(){
+        window.location.href="cusinsert.html";
+    }
+    function mainpage(){
+        window.location.href="main.html";
+    }
+</script>

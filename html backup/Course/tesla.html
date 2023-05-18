@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Caminar by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Talent Science Lab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/coursesep.css" />
+	</head>
+	<body>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="main.html"><span id="L1"></span></a></li>
+				<li><a href="course.html"><span id="L2"></span></a></li>
+				<li><a href="#"><span id="L3"></span></a></li>
+				<li><a href="#"><span id="L4"></span></a></li>
+				<li><a href="mov.html"><span id="L5"></span></a></li>
+				<li><a href="teacher.html"><span id="L6"></span></a></li>
+				<li><a href="#"><span id="L7"></span></a></li>
+				<li><a href="aboutus.html"><span id="L8"></span></a></li>
+				<li><a href="#"><span id="L9"></span></a></li>
+				<!--多國語言按鈕-->
+				<li><a href="#" onclick="chg_lan(0)">中文</a></li> &nbsp;
+				<li><a href="#" onclick="chg_lan(1)">English</a></li> &nbsp;
+				<li><a href="#" onclick="chg_lan(2)">日本語</a></li> &nbsp;
+				<!----------->
+			</ul>
+		</div> 
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="#">天賦科學實驗室 <span>Talent Science Lab</span></a></div>
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						<div class="image fit flush">
+							<img src="course_img/teslabig.jpg" alt="" />
+						</div>
+						<header class="special">
+							<h2><span id="L0"></span></h2>
+							<p><span id="L15"></span></p>
+						</header>
+						<div class="content">
+							<p><span id="L55"></span></p>
+                            <p></p>
+						</div>
+					</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Talent Science Lab. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="js/languageData.js" type="text/javascript"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<!------------------------------------------------------------------>
+<!--多國語言程式-->
+
+<script>
+	function chg_lan(lan_index) 
+	{ 
+		var myLangArray; 
+
+		switch(lan_index) 
+		{ 
+		/* languageData.js */
+			case 1: 
+		/* English */
+			myLangArray = L_english; 
+			break; 
+		case 2: 
+		/* Japan */
+			myLangArray = L_japan; 
+			break; 
+		default :
+		/* Taiwan */
+			myLangArray = L_taiwan; 
+		break; 
+
+		}
+		/* 將各個文字, 填入指定位置 */
+
+		//navbar
+		document.getElementById('L1').innerHTML = myLangArray[1];
+		document.getElementById('L2').innerHTML = myLangArray[2];
+		document.getElementById('L3').innerHTML = myLangArray[3];
+		document.getElementById('L4').innerHTML = myLangArray[4];
+		document.getElementById('L5').innerHTML = myLangArray[5];
+		document.getElementById('L6').innerHTML = myLangArray[6];
+		document.getElementById('L7').innerHTML = myLangArray[7];
+		document.getElementById('L8').innerHTML = myLangArray[8];
+		document.getElementById('L9').innerHTML = myLangArray[9];
+
+		//課程類別
+		document.getElementById('L15').innerHTML = myLangArray[15];
+
+		//tesla
+		document.getElementById('L0').innerHTML = myLangArray[0];
+		document.getElementById('L55').innerHTML = myLangArray[55];
+
+	}
+</script>
+<script type="text/javascript">chg_lan(0); </script>
+<!------------------------------------------------------------------>

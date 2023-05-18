@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加入會員</title>
+    <link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+    <!-- <link rel="shortcut icon" href="icon.ico" type="image/x-icon"/> -->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="insert-assets/css/insert.css" />
+
+  </head>
+  <body>
+
+		<!-- Header -->
+    <header id="header">
+      <div class="logo"><a href="main.html">Talent Science Lab <span>by Group TALENT</span></a></div>
+      <a href="main.html"><span id="L1"></span></a>
+      <a href="course.html"><span id="L2"></span></a>
+      <a href="regis.html"><span id="L3"></span></a>
+      <a href="cart.html"><span id="L4"></span></a>
+      <a href="mov.html"><span id="L5"></span></a>
+      <a href="teacher.html"><span id="L6"></span></a>
+      <a href="couinformations.html"><span id="L7"></span></a>
+      <a href="aboutus.html"><span id="L8"></span></a>
+      <a href="contactus.html"><span id="L9"></span></a>
+      <a href="photo.html"><span id="L92"></span></a>
+      <!--多國語言按鈕-->
+      <button onclick="chg_lan(0);chi();">中文</button> &nbsp; 
+      <button onclick="chg_lan(1);eng();">English</button> &nbsp; 
+      <button onclick="chg_lan(2);jp()">日本語</button> &nbsp; 
+      <!----------->
+    </header>
+
+		<!-- Two -->
+    <section id="two" class="wrapper style2">
+      <div class="inner">
+        <div class="box">
+          <div class="content">
+            <header class="align-center">
+              <p>Join Us</p>
+              <h2>加入會員</h2>
+            </header>
+            <div>
+              <iframe name="hidden_iframe" style="display:none;"></iframe>
+              <form action="https://script.google.com/macros/s/AKfycbw-fwJEGAVmExGHb0AHuKaMRZlFZOhg7xuSzCHH27P-FfcrsE9h9V7xbSyUOvWAEO9P/exec" method="post" target="hidden_iframe">
+              <input type="hidden" name="method" value="1" />
+              <span id="L70"></span>：<input type="text" name="cusname" placeholder="會員姓名" title="學生姓名" required="required"/>
+              <span id="L60"></span>：<input type="text" name="id" placeholder="身分證" title="身分證" required="required"/><br/>
+              <span id="L61"></span>：<input type="date" id="birth" name="birth" placeholder="生日" title="填入註解" required="required"/><br/>
+              <span id="L62"></span>：<input type="phone" name="phoneno" placeholder="電話號碼" title="填入註解" required="required"/><br/>
+              <span id="L71"></span>：<input type="password" id="pwd" name="pwd" placeholder="密碼" title="填入註解" required="required"/><br/>
+              <input type="submit"/>
+              </form>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/talentsciencelabofficial/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/talent_science_lab_official/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:talent_science_lab_official@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; talentsciencelabofficial. All rights reserved.
+				</div>
+			</footer>
+    <script src="../js/languageData.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </body>
+</html>
+
+<!------------------------------------------------------------------>
+<!--多國語言程式-->
+
+<script>
+	function chg_lan(lan_index) 
+	{ 
+		var myLangArray; 
+
+		switch(lan_index) 
+		{ 
+		/* languageData.js */
+			case 1: 
+		/* English */
+			myLangArray = L_english; 
+			break; 
+		case 2: 
+		/* Japan */
+			myLangArray = L_japan; 
+			break; 
+		default :
+		/* Taiwan */
+			myLangArray = L_taiwan; 
+		break; 
+
+		}
+		/* 將各個文字, 填入指定位置 */
+
+		//navbar
+		document.getElementById('L1').innerHTML = myLangArray[1];
+		document.getElementById('L2').innerHTML = myLangArray[2];
+		document.getElementById('L3').innerHTML = myLangArray[3];
+		document.getElementById('L4').innerHTML = myLangArray[4];
+		document.getElementById('L5').innerHTML = myLangArray[5];
+		document.getElementById('L6').innerHTML = myLangArray[6];
+		document.getElementById('L7').innerHTML = myLangArray[7];
+		document.getElementById('L8').innerHTML = myLangArray[8];
+		document.getElementById('L9').innerHTML = myLangArray[9];
+
+    //join class
+		document.getElementById('L60').innerHTML = myLangArray[60];
+		document.getElementById('L61').innerHTML = myLangArray[61];
+    document.getElementById('L62').innerHTML = myLangArray[62];
+		document.getElementById('L70').innerHTML = myLangArray[70];
+		document.getElementById('L71').innerHTML = myLangArray[71];
+    document.getElementById('L92').innerHTML = myLangArray[92]
+	}
+</script>
+<script type="text/javascript">chg_lan(0); </script>
+<!------------------------------------------------------------------>
+<script>
+
+</script>
